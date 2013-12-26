@@ -59,7 +59,7 @@ void activateLeds(int la, int lh, int ra, int rh) {
 
 int brightness(int p) {
   if (p < 0) {
-    p * -1; 
+    p = p * -1; 
   }
   return round(float(p) / 100 * 255);
 }
